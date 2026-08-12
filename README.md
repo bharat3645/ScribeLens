@@ -1,12 +1,12 @@
-# NeuroOCR
+# ScribeLens
 
-[![CI](https://github.com/bharat3645/neuro-ocr/actions/workflows/ci.yml/badge.svg)](https://github.com/bharat3645/neuro-ocr/actions/workflows/ci.yml)
+[![CI](https://github.com/bharat3645/ScribeLens/actions/workflows/ci.yml/badge.svg)](https://github.com/bharat3645/ScribeLens/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-**Where paper meets AI.** NeuroOCR is a browser-based handwritten text recognition tool: drop in a photo of handwritten notes, a scanned document, or a receipt, and get back clean, editable, copyable text — entirely client-side, with no server, no upload, and no API key.
+**Where paper meets AI.** ScribeLens is a browser-based handwritten text recognition tool: drop in a photo of handwritten notes, a scanned document, or a receipt, and get back clean, editable, copyable text — entirely client-side, with no server, no upload, and no API key.
 
 ## Contents
 
@@ -23,7 +23,7 @@
 
 ## Overview
 
-OCR tools typically mean uploading a document to someone else's server. NeuroOCR does the whole job in the tab: image preprocessing, text recognition, and post-processing all run on-device using WebAssembly and (optionally) TensorFlow.js. Nothing leaves the browser, so there's nothing to configure and nothing to trust with your documents.
+OCR tools typically mean uploading a document to someone else's server. ScribeLens does the whole job in the tab: image preprocessing, text recognition, and post-processing all run on-device using WebAssembly and (optionally) TensorFlow.js. Nothing leaves the browser, so there's nothing to configure and nothing to trust with your documents.
 
 ## Features
 
@@ -35,7 +35,7 @@ OCR tools typically mean uploading a document to someone else's server. NeuroOCR
 - **Editable output** — correct any recognition mistakes directly in the results box
 - **Copy to clipboard** or **download as `.txt`**
 - **Persistent session history** — past results (text, confidence, and timestamp) are saved to `localStorage`, capped at 50 entries, so they survive a page reload; individual entries can be removed, or the whole history cleared, from the sidebar
-- **Optional custom model support** — drop a TensorFlow.js model at `public/models/model.json` and NeuroOCR loads it automatically to augment recognition; without one, it runs on Tesseract alone
+- **Optional custom model support** — drop a TensorFlow.js model at `public/models/model.json` and ScribeLens loads it automatically to augment recognition; without one, it runs on Tesseract alone
 
 ## Tech Stack
 
@@ -92,8 +92,8 @@ There is no backend. Recognition runs entirely in the user's browser — no serv
 ### Install & run
 
 ```bash
-git clone https://github.com/bharat3645/neuro-ocr.git
-cd neuro-ocr
+git clone https://github.com/bharat3645/ScribeLens.git
+cd ScribeLens
 npm install
 npm run dev
 ```
@@ -115,12 +115,12 @@ No environment variables or API keys are required — the app has no server-side
 ## Usage
 
 1. Open the app and drop an image onto the upload area, or click to choose a file (JPEG, PNG, WebP, BMP, or GIF, up to 15 MB).
-2. NeuroOCR previews the image, preprocesses it, and runs it through the OCR pipeline.
+2. ScribeLens previews the image, preprocesses it, and runs it through the OCR pipeline.
 3. Review the recognized text alongside its confidence score. Edit directly in the output box to fix any mistakes.
 4. Copy the result to the clipboard or download it as a `.txt` file.
 5. Past results are saved automatically in the **History** sidebar — reopen, remove individual entries, or clear the whole list at any time.
 
-To augment recognition with your own model, place a TensorFlow.js model at `public/models/model.json`; NeuroOCR picks it up automatically on startup.
+To augment recognition with your own model, place a TensorFlow.js model at `public/models/model.json`; ScribeLens picks it up automatically on startup.
 
 ## Testing & CI
 
@@ -140,7 +140,7 @@ A GitHub Actions workflow (`.github/workflows/ci.yml`) runs lint, typecheck, tes
 │   ├── components/
 │   │   ├── Navbar.tsx         # top navigation
 │   │   ├── History.tsx        # collapsible sidebar of past results
-│   │   ├── Features.tsx       # "why NeuroOCR" section on the home page
+│   │   ├── Features.tsx       # "why ScribeLens" section on the home page
 │   │   └── About.tsx          # /about page
 │   ├── hooks/
 │   │   └── useHistory.ts      # localStorage-backed session history

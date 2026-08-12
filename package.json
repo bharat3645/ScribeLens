@@ -1,18 +1,18 @@
 {
-  "name": "neuro-ocr",
+  "name": "scribelens",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "NeuroOCR - browser-based handwritten text recognition built with React, TypeScript, and Tesseract.js.",
+  "description": "ScribeLens - browser-based handwritten text recognition built with React, TypeScript, and Tesseract.js.",
   "author": "bharat3645",
   "license": "MIT",
-  "homepage": "https://github.com/bharat3645/neuro-ocr#readme",
+  "homepage": "https://github.com/bharat3645/ScribeLens#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bharat3645/neuro-ocr.git"
+    "url": "git+https://github.com/bharat3645/ScribeLens.git"
   },
   "bugs": {
-    "url": "https://github.com/bharat3645/neuro-ocr/issues"
+    "url": "https://github.com/bharat3645/ScribeLens/issues"
   },
   "keywords": [
     "ocr",

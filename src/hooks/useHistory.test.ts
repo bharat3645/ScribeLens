@@ -32,7 +32,7 @@ describe('useHistory', () => {
       result.current.addEntry({ text: 'saved', confidence: 80, source: 'tesseract' });
     });
 
-    const raw = localStorage.getItem('neuro-ocr:history');
+    const raw = localStorage.getItem('scribelens:history');
     expect(raw).not.toBeNull();
     expect(JSON.parse(raw as string)).toHaveLength(1);
   });

@@ -12,7 +12,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-[var(--text-brown)]">
-                NeuroOCR
+                ScribeLens
               </span>
               <span className="text-xs text-[var(--text-brown)] opacity-75">
                 Where Paper Meets AI
@@ -27,7 +27,7 @@ const Navbar = () => {
               About
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/bharat3645/ScribeLens"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--text-brown)] hover:opacity-75 transition-opacity"

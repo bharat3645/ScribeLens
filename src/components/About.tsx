@@ -54,7 +54,7 @@ const About: React.FC = () => {
       <Navbar />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-[var(--text-brown)] mb-4">About NeuroOCR</h1>
+          <h1 className="text-4xl font-bold text-[var(--text-brown)] mb-4">About ScribeLens</h1>
           <p className="text-lg text-[var(--text-brown)] opacity-80 max-w-3xl mx-auto">
             An AI-powered OCR tool that revolutionizes the way you digitize handwritten text. 
             Built with cutting-edge technology to provide accurate, fast, and reliable text recognition.

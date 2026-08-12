@@ -8,7 +8,7 @@ export interface HistoryEntry {
   timestamp: number;
 }
 
-const STORAGE_KEY = 'neuro-ocr:history';
+const STORAGE_KEY = 'scribelens:history';
 /** Keep localStorage bounded even for long-running sessions. */
 const MAX_ENTRIES = 50;
 

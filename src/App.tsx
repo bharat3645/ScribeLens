@@ -136,7 +136,7 @@ function MainContent() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 paper-card p-8">
               <h1 className="mt-3 text-4xl font-bold text-[var(--text-brown)] italic">
-                NeuroOCR: Handwritten Text Recognition
+                ScribeLens: Handwritten Text Recognition
               </h1>
               <p className="mt-4 text-lg text-[var(--text-brown)] opacity-80">
                 Upload an image containing handwritten text to convert it into
